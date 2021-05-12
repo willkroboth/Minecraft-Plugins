@@ -1,0 +1,10 @@
+name: spreadcircle
+version: 1
+author: willkroboth
+main: me.willkroboth.spreadcircle.spreadcircle
+api-version: 1.16
+commands:
+  spreadcircle:
+    description: spreads selected entities in a circle around a point
+    usage: /spreadcircle <entities> <x> <y> <z> <world> <value/from> <radius>/(<entity> <scoreboard>)
+    permission: "2"
