@@ -1,0 +1,10 @@
+commands:
+  warmwelcome:
+    usage: /warmwelcome <player>
+    description: Welcomes a player and gives them a diamond
+    aliases:
+      - ww
+    permission: customcommands.warmwelcome
+    commands:
+      - tell <player> welcome
+      - give <player> minecraft:diamond

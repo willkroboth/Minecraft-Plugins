@@ -1,0 +1,5 @@
+name: customcommands
+version: 1.0.0
+author: willkroboth
+main: me.willkroboth.customcommands.customcommands
+api-version: 1.16
