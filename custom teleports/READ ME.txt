@@ -1,0 +1,19 @@
+A minecraft spigot plugin that adds some commands that can teleport entities in new ways.
+
+commands:
+  spreadcircle:
+    description: Spreads selected entities in a circle around a point.
+    usage: /spreadcircle <entities> <x> <y> <z> <world> <value/from> <radius>/(<entity> <scoreboard>)
+    permission: "customteleports.spreadcircle"
+  puttoground:
+    description: Moves selected entities up and down to the highest solid block at thier x,z position.
+    usage: /puttoground <entities>
+    permission: "customteleports.puttoground"
+  spreadsphere:
+    description: Spreads selected entities in a sphere around a point.
+    usage: /spreadsphere <entities> <x> <y> <z> <world> <value/from> <radius>/(<entity> <scoreboard>)
+    permission: "customteleports.spreadsphere"
+  addvector:
+    description: Adds vector to some entities' current position. The vector can be defined by the command or come from another entity.
+    usage: /addvector <entities> <value/from> (<x> <y> <z>)/(<entity>)
+    permission: "customteleposts.addvector"
