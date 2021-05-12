@@ -1,0 +1,27 @@
+The custom commands plugin allows server administrators to build thier own commands using the config.yml file. This is done by specifying certain parameters and writing a list of commands that the new command will run.
+
+The best way to explain how to use this plugin is an example. The example here is by default loaded into the config.yml and shows all the features:
+
+commands:
+  warmwelcome:
+    usage: /warmwelcome <player>
+    description: Welcomes a player and gives them a diamond
+    aliases:
+      - ww
+    permission: customcommands.warmwelcome
+    commands:
+      - tell <player> welcome
+      - give <player> minecraft:diamond
+
+First, there is the commands header, which marks out the section where you should place your commands. In that, there is the warmwelcome header. This marks out where all of the information for this command will be. Inside it are 5 sections that define the command:
+
+usage: This parameter is required; if it is not given the plugin will skip loading the command. It defines everything about how the command is used by players, and is also shown when the player uses the command incorrectly or uses /help on the command. To work as intended, the usage should start with a / then the name the command should use. After that, separated by spaces and surrounded by < >, are any parameters for the command. In this case, the command takes a parameter called <player>.
+Note: the name the command will use does not depend on the string used to mark out the section where the information is, only on the first word in the usage string
+
+description: This parameter is not required. It will be shown to the player when they uses /help on the command.
+
+aliases: This parameter is not required. It is a list of alternative strings that can be used to run the command. If any are given, they will be shown to the player when they use /help on the command
+
+permission: This parameter is not required, but if nothing is given anyone will be able to use the command. If something is given, it will become a new permission the player will need to run the new command. This permission should act like any other, meaning you can use the permissions.yml or a permssions plugin to interact with and hand out the permission.
+
+commands: This parameter is required; if it is not given, the plugin will skip loading the command. This is a list of commands that your new command will run. These commands can come from minecraft or other plugins and there is no error checking to make sure they are correct. You can use any of the parameters given in the usage section by putting the same name, including < >, directly into your command. In this case, the <player> parameter is used as a target for the /tell and /give commands.
