@@ -1,0 +1,5 @@
+name: ScheduledRestart
+version: 1.0.0
+author: willkroboth
+main: me.willkroboth.scheduledrestart.ScheduledRestart
+api-version: 1.16
