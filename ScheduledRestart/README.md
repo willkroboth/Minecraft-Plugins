@@ -19,7 +19,7 @@ restarts:
 
 <p>warnIntervals: This argument only applies if waitForPlayers=false and warnPlayers=true. It should be a string of integers separated by ',' that represent minutes before the restart when the server should tell the players "Server will automatically restart in " + interval + " minutes". If the argument is missing or empty, the plugin will skip over it and use no intervals will be used. If there are any numbers that can not be read as integers, the plugin will announce that in red and not use any intervals for that restart until the problem is fixed.</p>
 
-<p>Note: In order for your server to restart again after this plugin shuts it down, you need to setup something external (since the server is no longer running, plugins can not do anything). You should be able to find a solution for your device and computer online, but here's what I do for my paper server running on a Windows computer:</p>
+<p>Note: In order for your server to restart again after this plugin shuts it down, you need to setup something external (since the server is no longer running, plugins can not do anything). You should be able to find a solution for your server and computer online, but here's what I do for my paper server running on a Windows computer:</p>
 <ol>
 	<li>Create a new text file in notepad and paste the command you use to start your server into it (Something like "java -Xms3G -Xmx3G paper.jar -nogui")</li>
 	<li>Go File>Save As... and give your file any name followed by ".cmd". This will create a command file that will start your server when run. (You can also double click the file to start the server)</li>
