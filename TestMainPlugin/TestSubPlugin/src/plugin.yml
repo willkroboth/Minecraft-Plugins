@@ -1,0 +1,7 @@
+name: TestSubPlugin
+version: 1.0.0
+author: willkroboth
+main: me.willkroboth.TestSubPlugin.TestSubPlugin
+api-version: 1.18
+loadbefore:
+  - TestMainPlugin

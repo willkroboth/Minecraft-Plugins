@@ -1,0 +1,5 @@
+name: TestMainPlugin
+version: 1.0.0
+author: willkroboth
+main: me.willkroboth.TestMainPlugin.TestMainPlugin
+api-version: 1.18
