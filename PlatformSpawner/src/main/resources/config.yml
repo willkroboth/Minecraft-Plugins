@@ -1,0 +1,17 @@
+shapes:
+  square:
+    layout:
+      - BBB
+      - BBB
+      - BBB
+    materials:
+      B: "minecraft:iron_block"
+    defaultTimeout: 1.5
+  cross:
+    layout:
+      - NBN
+      - BBB
+      - NBN
+    materials:
+      N: "none"
+      B: "minecraft:diamond_block"

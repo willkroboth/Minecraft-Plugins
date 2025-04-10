@@ -1,0 +1,7 @@
+name: PlatformSpawner
+version: '${project.version}'
+main: me.willkroboth.platformspawner.PlatformSpawner
+api-version: 1.13
+author: willkroboth
+depend:
+  - CommandAPI

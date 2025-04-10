@@ -1,0 +1,7 @@
+name: DelayedCommands
+version: '${project.version}'
+main: me.willkroboth.delayedcommands.DelayedCommands
+api-version: 1.13
+author: willkroboth
+depend:
+  - CommandAPI

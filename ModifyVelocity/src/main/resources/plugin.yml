@@ -1,0 +1,7 @@
+name: ModifyVelocity
+version: '${project.version}'
+main: me.willkroboth.modifyvelocity.Main
+api-version: 1.13
+description: A plugin to modify player movement velocity
+depend:
+  - CommandAPI
