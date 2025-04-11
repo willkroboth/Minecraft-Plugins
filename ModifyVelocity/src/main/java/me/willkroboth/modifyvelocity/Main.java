@@ -5,13 +5,10 @@ import dev.jorel.commandapi.CommandAPICommand;
 import dev.jorel.commandapi.arguments.LocationArgument;
 import dev.jorel.commandapi.arguments.MultiLiteralArgument;
 import org.bukkit.Location;
-import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Entity;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.util.Vector;
-
-import java.util.List;
 
 public class Main extends JavaPlugin {
 
@@ -20,8 +17,8 @@ public class Main extends JavaPlugin {
     new CommandAPICommand("modifyvelocity")
             .withPermission("modifyvelocity.command")
             .withArguments(
-                    new MultiLiteralArgument("modifyMode", List.of("add", "multiply", "set")),
-                    new MultiLiteralArgument("positionMode", List.of("relative", "absolute")),
+                    new MultiLiteralArgument("modifyMode", "add", "multiply", "set"),
+                    new MultiLiteralArgument("positionMode", "relative", "absolute"),
                     new LocationArgument("velocity")
             )
             .executesNative((sender, args) -> {

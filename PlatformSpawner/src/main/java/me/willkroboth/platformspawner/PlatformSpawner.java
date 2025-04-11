@@ -22,8 +22,8 @@ public final class PlatformSpawner extends JavaPlugin {
 
         Map<String, Shape> shapes;
         if(shapesConfig == null || (
-                shapes = Shape.loadShapes(this, shapesConfig)
-        ).size() == 0) {
+            shapes = Shape.loadShapes(this, shapesConfig)
+        ).isEmpty()) {
             logError("No shapes configured. Disabling PlatformSpawner.");
             this.getServer().getPluginManager().disablePlugin(this);
             return;
